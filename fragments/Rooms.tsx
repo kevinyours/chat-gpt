@@ -7,7 +7,6 @@ import { useForm } from '@/hooks/useForm';
 import { useRoom } from '@/hooks/useRoom';
 import { useRouter } from 'next/navigation';
 import { Fragment } from 'react';
-import { twMerge } from 'tailwind-merge';
 
 const Rooms = () => {
   const { push } = useRouter();
