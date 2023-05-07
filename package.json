@@ -1,0 +1,48 @@
+{
+  "name": "chat-gpt",
+  "version": "0.1.0",
+  "author": {
+    "email": "admin@kevinyou.com",
+    "name": "Kevin You",
+    "url": "https://github.com/kevinyours"
+  },
+  "packageManager": "yarn@3.2.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.0.1",
+    "daisyui": "^2.51.6",
+    "dexie": "^3.2.3",
+    "dexie-react-hooks": "^1.1.3",
+    "eventsource-parser": "^1.0.0",
+    "next": "13.4.1",
+    "openai": "^3.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "tailwind-merge": "^1.12.0",
+    "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "20.1.0",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "postcss": "^8.4.23",
+    "prettier": "^2.8.7",
+    "stylelint": "^15.4.0",
+    "stylelint-config-standard": "^32.0.0",
+    "stylelint-config-tailwindcss": "^0.0.7",
+    "tailwindcss": "^3.3.2"
+  }
+}
