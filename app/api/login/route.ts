@@ -1,12 +1,10 @@
 import { type NextRequest } from 'next/server';
 
-// Max-Age=${maxAge};
-// const maxAge = 60 * 60 * 24 * 30; // 30일
-
 type RequestDTO = {
   payload: string;
 };
 
+const maxAge = 60 * 60 * 24 * 30;
 export const runtime = 'edge';
 
 export async function POST(request: NextRequest) {
@@ -22,7 +20,7 @@ export async function POST(request: NextRequest) {
     return new Response(JSON.stringify({ result: true }), {
       status: 200,
       headers: {
-        'set-cookie': `apiKey=${payload}; path=/;`,
+        'set-cookie': `apiKey=${payload}; Max-Age=${maxAge}; path=/;`,
         'content-type': 'application/json',
       },
     });
