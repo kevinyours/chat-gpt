@@ -37,10 +37,9 @@ const Rooms = () => {
               return (
                 <li
                   key={`chat-room-${id}`}
-                  className={twMerge(
-                    'flex justify-between border-t-[1px] leading-10 px-2 py-4'
-                  )}
+                  className={'flex justify-between border-t-[1px] leading-10'}
                   style={{
+                    padding: '1rem 0.5rem',
                     borderTop: '0.4px solid white',
                   }}
                 >
